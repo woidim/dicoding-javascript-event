@@ -19,6 +19,8 @@ function increment() {
   }
 }
 
+window.addEventListener('load', welcome)
+document.getElementById('incrementButton').addEventListener('click', increment)
 
 // document.body.onload = welcome
 // document.getElementById('incrementButton').onclick = increment
