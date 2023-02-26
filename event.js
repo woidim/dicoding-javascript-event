@@ -4,8 +4,6 @@ function welcome() {
   contents.removeAttribute('hidden')
 }
 
-document.body.onload = welcome
-
 function increment() {
   document.getElementById('count').innerText++
 
@@ -21,5 +19,9 @@ function increment() {
   }
 }
 
-document.getElementById('incrementButton').onclick = increment
+window.addEventListener('load', welcome)
+document.getElementById('incrementButton').addEventListener('click', increment)
+
+// document.body.onload = welcome
+// document.getElementById('incrementButton').onclick = increment
 
